@@ -226,7 +226,7 @@ for(let i=0; i<16; i++)
 {
     abr[i] = cell[i]
 }
-UserInput();
+//keyboard(); 
 console.log(abr)
 // move()
 // console.log(cell)
