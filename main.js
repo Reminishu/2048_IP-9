@@ -21,36 +21,39 @@ function reset()
 // Input listener
 function keyboard()
 {
-    return 4
+    document.onkeydown = function(e)
+    {
+        switch (e.keyCode)
+        {
+            case 37:
+                alert('left');
+                move(4)
+                break;
+            case 38:
+                alert('up');
+                move(1)
+                break;
+            case 39:
+                alert('right');
+                move(2)
+                break;
+            case 40:
+                alert('down');
+                move(3)
+                break;
+        }
+    }
 }
 
-function UserInput(){
-document.onkeydown = function(e) {
-    switch (e.keyCode) {
-        //Add code to flow output where needed.
-        case 37:
-            alert('left');
-            break;
-        case 38:
-            alert('up');
-            break;
-        case 39:
-            alert('right');
-            break;
-        case 40:
-            alert('down');
-            break;
-    }
-};
-};
+
 // Move
-function move()
+function move(key)
 {
     let headValue = -1      //holds the value of a unique valued block for move and merge
     let headIndex = -1      //index of the unique value
     let zeroIndex = -1      //index of first zero in sequence
     let zeroFlag = false    //flag for zero encounter
-    switch(keyboard())      //keyboard() here is the listener function
+    switch(key)      //keyboard() here is the listener function
     {
         case 1:     //Up
             for(let i=0; i<4; i++)
@@ -181,6 +184,8 @@ function move()
             break
             
     }
+    insert()
+    console.log(cell)       //debugging
     return
 }
 
@@ -197,6 +202,23 @@ function merge(a,b)
     return
 }
 
+//Random tile insert
+function insert()
+{
+    let arr = []        //buffer array to store indices of zeroes in board array
+    for(let i=0; i<16; i++)
+    {
+        if(cell[i] === 0)
+        {
+            arr.push(i)     //appending the index of zero in buffer array
+        }
+    }
+    //With the inbuilt random we first get an index for buffer array, we use the value stored at that index as the target index for the new tile. We again take a random value and if it's less than 0.9, we insert 2 else we insert 4, simulating a 10-90 split for 4-2 insertion.
+    let f = arr[Math.floor(Math.random() * arr.length)]
+    cell[f] = (Math.random( ) > 0.9 ? 4 : 2)
+    console.log(f)      //debugging
+}
+
 // debug
 reset()
 let abr = [0]
@@ -205,5 +227,6 @@ for(let i=0; i<16; i++)
     abr[i] = cell[i]
 }
 console.log(abr)
-move()
-console.log(cell)
+// move()
+// console.log(cell)
+setInterval(keyboard, 10)
