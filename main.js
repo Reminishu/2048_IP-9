@@ -11,42 +11,58 @@ function reset()
     {
         cell[i] = 0
     }
+    let k = 0, j = 0
     //adding 2 starting blocks
-    cell[Math.floor(Math.random() * 16)] = 2
-    cell[Math.floor(Math.random() * 16)] = 2
+    k = j = Math.floor(Math.random() * 16)
+    cell[k] = 2
+    while(k === j)
+    {
+        j = Math.floor(Math.random() * 16)
+    }
+    cell[j] = 2
     score = 0
+    keyboard()
     return
 }
 
 // Input listener
 function keyboard()
 {
+    let z = 0
     document.onkeydown = function(e)
     {
-        switch (e.keyCode)
+        if(movesLeft())
         {
-            case 37:
-                alert('left');
-                move(4)
-                break;
-            case 38:
-                alert('up');
-                move(1)
-                break;
-            case 39:
-                alert('right');
-                move(2)
-                break;
-            case 40:
-                alert('down');
-                move(3)
-                break;
+            switch (e.keyCode)
+            {
+                case 37:
+                    console.log('left');
+                    move(4)
+                    break;
+                case 38:
+                    console.log('up');
+                    move(1)
+                    break;
+                case 39:
+                    console.log('right');
+                    move(2)
+                    break;
+                case 40:
+                    console.log('down');
+                    move(3)
+                    break;
+            }
+        }
+        else
+        {
+            // This is loss
+            console.log('lost') //debugging
         }
     }
 }
 
 
-// Move
+// Move tiles
 function move(key)
 {
     let headValue = -1      //holds the value of a unique valued block for move and merge
@@ -60,7 +76,7 @@ function move(key)
             {
                 headIndex = headValue = zeroIndex = -1      //reset value for next column
                 zeroFlag = false
-                for(let j=i; j<i+13;j+=4)
+                for(let j=i; j<i+13; j+=4)
                 {
                     if(cell[j] !== 0 && cell[j] !== headValue)      //!0 and !head, we encounter a unique non-zero value
                     {
@@ -92,7 +108,7 @@ function move(key)
             {
                 headIndex = headValue = zeroIndex = -1      //reset value for next row
                 zeroFlag = false
-                for(let j=i; j>i-4;j--)
+                for(let j=i; j>i-4; j--)
                 {
                     if(cell[j] !== 0 && cell[j] !== headValue)      //!0 and !head, we encounter a unique non-zero value
                     {
@@ -124,7 +140,7 @@ function move(key)
             {
                 headIndex = headValue = zeroIndex = -1      //reset value for next column
                 zeroFlag = false
-                for(let j=i; j>i-13;j-=4)
+                for(let j=i; j>i-13; j-=4)
                 {
                     if(cell[j] !== 0 && cell[j] !== headValue)      //!0 and !head, we encounter a unique non-zero value
                     {
@@ -156,7 +172,7 @@ function move(key)
             {
                 headIndex = headValue = zeroIndex = -1      //reset value for next row
                 zeroFlag = false
-                for(let j=i; j<i+4;j++)
+                for(let j=i; j<i+4; j++)
                 {
                     if(cell[j] !== 0 && cell[j] !== headValue)      //!0 and !head, we encounter a unique non-zero value
                     {
@@ -184,26 +200,28 @@ function move(key)
             break
             
     }
-    insert()
+    insertTile()
     console.log(cell)       //debugging
     return
 }
 
-// Merge
+// Merge similar tiles
 function merge(a,b)
 {
     cell[b] = cell[b]*2
     cell[a] = 0
     score+= cell[b]
+    console.log(score)  //debugging
     if(cell[b] === 2048)
     {
         //win
+        // alert('won')
     }
     return
 }
 
 //Random tile insert
-function insert()
+function insertTile()
 {
     let arr = []        //buffer array to store indices of zeroes in board array
     for(let i=0; i<16; i++)
@@ -213,11 +231,44 @@ function insert()
             arr.push(i)     //appending the index of zero in buffer array
         }
     }
+    if(arr.length<1)
+    {
+        return
+    }
     //With the inbuilt random we first get an index for buffer array, we use the value stored at that index as the target index for the new tile. We again take a random value and if it's less than 0.9, we insert 2 else we insert 4, simulating a 10-90 split for 4-2 insertion.
     let f = arr[Math.floor(Math.random() * arr.length)]
     cell[f] = (Math.random( ) > 0.9 ? 4 : 2)
     console.log(f)      //debugging
+    return
 }
+
+// Valid moves remaining
+function movesLeft()
+{
+    for(let i=0; i<4; i++)
+    {
+        for(let j=i; j<i+12; j+=4)
+        {
+            if(cell[j] === 0 || cell[j+4] ===0 || cell[j] === cell[j+4])
+            {
+                return true
+            }
+        }
+    }
+    for(let i=3; i<16; i+=4)
+    {
+        for(let j=i; j>i-3; j--)
+        {
+            if(cell[j] === cell[j-1])
+            {
+                return true
+            }
+        }
+    }
+    return false
+}
+
+
 
 // debug
 reset()
@@ -228,6 +279,4 @@ for(let i=0; i<16; i++)
 }
 //keyboard(); 
 console.log(abr)
-// move()
-// console.log(cell)
-setInterval(keyboard, 10)
+

@@ -296,5 +296,5 @@ for(let i=0; i<16; i++)
 console.log(abr)
 // move()
 // console.log(cell)
-setInterval(keyboard, 10)
-setInterval(UserInputTouch,10);
+// setInterval(keyboard, 10)
+setInterval(UserInputTouch, 10);
