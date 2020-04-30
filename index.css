@@ -10,11 +10,11 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    background-color: #fae5c3;
     overflow: auto;
 }
 .bg-1 {
-    background-color: rgb(45, 120, 143);
+    background-color: #fae5c3;
 }
 
 .navbar {
@@ -25,7 +25,7 @@ body{
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
-    background-color: rgb(68, 91, 192);
+    background-color: #fae5c3;
   }
   
   .navbar-nav :hover {
@@ -65,8 +65,8 @@ body{
     margin-top:10px;
     border-radius: 25px;
     float:right;
-    background: rgb(6, 148, 173);;
-    color: black;
+    background: #ffab5e;
+    color: white;
     position: relative;
 }
 
@@ -80,8 +80,8 @@ body{
   margin-top:10px;
   border-radius: 25px;
   float:left;
-  background: rgb(6, 148, 173);
-  color: black;
+  background: #ffab5e;
+  color: white;
   position: relative;
 }
 
@@ -481,13 +481,14 @@ body{
 .button1{
     display:inline-block;
     padding:0.35em 1.2em;
-    border:0.1em solid rgb(5, 111, 250);    
+    border:0.1em solid black;    
     margin:0 0.3em 0.3em 0;
     border-radius:0.12em;
     box-sizing: border-box;
     font-family:'Roboto',sans-serif;
     font-weight:300;
-    color:#FFFFFF;
+    color:white;
+    background-color: #ffab5e;
 /*    text-align: top; */
     position: top;
     transition: all 0.2s;
@@ -506,13 +507,14 @@ body{
 .button2{
     display:inline-block;
     padding:0.35em 1.2em;
-    border:0.1em solid rgb(5, 111, 250);
+    border:0.1em solid black;
     margin:0 0.3em 0.3em 0;
     border-radius:0.12em;
     box-sizing: border-box;
     font-family:'Roboto',sans-serif;
     font-weight:300;
-    color:#FFFFFF;
+    color:white;
+    background-color: #ffab5e;
 /*    text-align: top; */
     position: left;
     transition: all 0.2s;
@@ -531,13 +533,14 @@ body{
 .button3{
     display:inline-block;
     padding:0.35em 1.2em;
-    border:0.1em solid rgb(5, 111, 250);
+    border:0.1em solid black;
     margin:0 0.3em 0.3em 0;
     border-radius:0.12em;
     box-sizing: border-box;
     font-family:'Roboto',sans-serif;
     font-weight:300;
-    color:#FFFFFF;
+    color:white;
+    background-color: ffab5e;
 /*    text-align: top; */
     position: right;
     transition: all 0.2s;
@@ -556,10 +559,11 @@ body{
 .button4{
     display:inline-block;
     padding:0.35em 1.2em;
-    border:0.1em solid rgb(5, 111, 250);
+    border:0.1em solid black;
     margin:0 0.3em 0.3em 0;
     border-radius:0.12em;
     box-sizing: border-box;
+    background-color: ffab5e;
     font-family:'Roboto',sans-serif;
     font-weight:300;
     color:#FFFFFF;
@@ -581,13 +585,14 @@ body{
 .button5{
   display:inline-block;
   padding:0.45em 1.2em;
-  border:0.1em solid rgb(5, 111, 250);
+  border:0.1em solid black;
   margin:0 0.3em 0.3em 0;
   border-radius:0.12em;
   box-sizing: border-box;
   font-family:'Roboto',sans-serif;
   font-weight:300;
   color:#FFFFFF;
+  background-color: ffab5e;
 /*    text-align: top; */
   position: bottom;
   transition: all 0.2s;
