@@ -494,7 +494,7 @@ body{
     transition: all 0.2s;
     }
     .button1:hover{
-    color:#000000;
+    color:#ffab5e;
     background-color:#FFFFFF;
     }
     @media all and (max-width:30em){
@@ -520,7 +520,7 @@ body{
     transition: all 0.2s;
     }
     .button2:hover{
-    color:#000000;
+    color:#ffab5e;
     background-color:#FFFFFF;
     }
     @media all and (max-width:30em){
@@ -546,7 +546,7 @@ body{
     transition: all 0.2s;
     }
     .button3:hover{
-    color:#000000;
+    color:#ffab5e;
     background-color:#FFFFFF;
     }
     @media all and (max-width:30em){
@@ -572,7 +572,7 @@ body{
     transition: all 0.2s;
     }
     .button4:hover{
-    color:#000000;
+    color:#ffab5e;
     background-color:#FFFFFF;
     }
     @media all and (max-width:30em){
@@ -598,7 +598,7 @@ body{
   transition: all 0.2s;
   }
   .button5:hover{
-  color:#000000;
+  color:#ffab5e;
   background-color:#FFFFFF;
   }
   @media all and (max-width:30em){
