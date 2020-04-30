@@ -307,7 +307,11 @@ function draw()
     const scoreShow = document.getElementById('Score')
     if(scoreShow){scoreShow.innerText = score.toString()}
 
-    if(tile1){tile1.textContent=  cell[0]}
+    if(tile1)
+    {
+        tile1.textContent=  cell[0]
+        if(cell[0] === 2)tile1.className = 'num2'
+    }
     if(tile2){tile2.textContent=  cell[1]}
     if(tile3){tile3.textContent=  cell[2]}
     if(tile4){tile4.textContent=  cell[3]}
@@ -363,14 +367,3 @@ for(let i=0; i<16; i++)
 }
 //keyboard(); 
 console.log(abr)
-
-
-
-//For grid to work, something like this is needed -
-//domobj = function(){}
-//var grid = document.CreateElement('grid)
-//grid.innertext = num;
-//grid.classname = 'hor' + obj
-//poaition[0] + '' + 'ver' + obj
-//position[1] + '' + 'num' + num;
-// + some other stuff I don't quite understand
