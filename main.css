@@ -12,7 +12,7 @@ body{
     overflow: auto;
 }
 .bg-1 {
-    background-color: #fff787;
+    background-color: rgb(156, 209, 242);
 }
 
 .navbar {
@@ -23,7 +23,7 @@ body{
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
-    background-color: #eed545;
+    background-color: rgb(156, 209, 242);
   }
   
   .navbar-nav :hover {
@@ -116,75 +116,75 @@ body{
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
   .cell {
-    color: white;
+    color: gold;
     font-size: 3rem;
     text-align: center;
     padding: 4rem;
     border-style: solid;
-    border-color: black;
+    border-color: white;
   }
   .cell-1 {
-    background: deepskyblue;
+    background: rgb(179, 218, 242);
     border-spacing: 1px;
   }
   .cell-2 {
-    background: orangered;
+    background: rgb(179, 218, 242);
     border-spacing: 1px;
   }
   .cell-3 {
-    background: royalblue;
+    background: rgb(179, 218, 242);
     border-spacing: 1px;
   }
   .cell-4 {
-    background: gold;
+    background: rgb(179, 218, 242);
     border-spacing: 1px;
   }
   .cell-5 {
-    background: blueviolet;
+    background: rgb(179, 218, 242);
     border-spacing: 1px;
   }
   .cell-6 {
-    background: limegreen;
+    background: rgb(179, 218, 242);
     border-spacing: 1px;
   }
   .cell-7 {
-    background: coral;
+    background: rgb(179, 218, 242);
     border-spacing: 1px;
   }
   .cell-8 {
-    background: lightseagreen;
+    background: rgb(179, 218, 242);
     border-spacing: 1px;
   }
   .cell-9 {
-    background: maroon;
+    background: rgb(179, 218, 242);
     border-spacing: 1px;
   }
   .cell-10 {
-    background: deepskyblue;
+    background: rgb(179, 218, 242);
     border-spacing: 1px;
   }
   .cell-11 {
-    background: orangered;
+    background: rgb(179, 218, 242);
     border-spacing: 1px;
   }
   .cell-12 {
-    background: royalblue;
+    background: rgb(179, 218, 242);
     border-spacing: 1px;
   }
   .cell-13 {
-    background: gold;
+    background: rgb(179, 218, 242);
     border-spacing: 1px;
   }
   .cell-14 {
-    background: blueviolet;
+    background: rgb(179, 218, 242);
     border-spacing: 1px;
   }
   .cell-15 {
-    background: limegreen;
+    background: rgb(179, 218, 242);
     border-spacing: 1px;
   }
   .cell-16 {
-    background: coral;
+    background: rgb(179, 218, 242);
     border-spacing: 1px;
   }
 
