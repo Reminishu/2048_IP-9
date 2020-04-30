@@ -257,6 +257,8 @@ function insertTile()
     return
 }
 
+
+
 // Valid moves remaining
 function movesLeft()
 {
@@ -688,6 +690,16 @@ function startGame()
 {
     reset()
     draw()
+}
+function off() {
+    document.getElementById("overlay").style.display = "none";
+  }
+function overLay()
+{
+    reset()
+    draw()
+    off()
+
 }
 
 // debug
