@@ -37,14 +37,15 @@ body{
     height: auto;
     z-index: 999;
     opacity: 0.5;
-    position: fixed;
+    position: relative;
+    overflow: auto;
 }
 
 .mainlayer{
     margin:auto;
     width: auto;
     height: auto;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
 }
 
