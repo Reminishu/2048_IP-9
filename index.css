@@ -1,6 +1,6 @@
 html{
-    max-height: auto;
-    max-width: auto;
+    max-height: 1920px;
+    max-width: 1080px;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
