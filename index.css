@@ -14,7 +14,7 @@ body{
     overflow: auto;
 }
 .bg-1 {
-    background-color: rgb(131, 200, 218);
+    background-color: rgb(45, 120, 143);
 }
 
 .navbar {
@@ -25,7 +25,7 @@ body{
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
-    background-color: rgb(32, 85, 119);
+    background-color: rgb(68, 91, 192);
   }
   
   .navbar-nav :hover {
@@ -63,8 +63,9 @@ body{
     width: 40%;
     padding:10px;
     margin-top:10px;
+    border-radius: 25px;
     float:right;
-    background: white;
+    background: rgb(6, 148, 173);;
     color: black;
     position: relative;
 }
@@ -77,8 +78,9 @@ body{
   width: 40%;
   padding:10px;
   margin-top:10px;
+  border-radius: 25px;
   float:left;
-  background: white;
+  background: rgb(6, 148, 173);
   color: black;
   position: relative;
 }
@@ -137,10 +139,11 @@ body{
     padding: 3rem;
     border-style: solid;
     border-color: white;
+    
   }
   .cell-1 {
     background: rgb(179, 218, 242);
-    border-spacing: 1px;
+    border-spacing: 1px;    
     height: auto;
     width: auto;
   }
@@ -478,7 +481,7 @@ body{
 .button1{
     display:inline-block;
     padding:0.35em 1.2em;
-    border:0.1em solid rgb(5, 111, 250);
+    border:0.1em solid rgb(5, 111, 250);    
     margin:0 0.3em 0.3em 0;
     border-radius:0.12em;
     box-sizing: border-box;
