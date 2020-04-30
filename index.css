@@ -72,7 +72,8 @@ body{
 
 .container {
     height: auto;
-    margin: 2rem;
+    width: auto;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
