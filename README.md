@@ -1,5 +1,6 @@
 # 2048_IP-9
-Spring Semester 2020 Project for Discrete Mathematics
+Spring Semester 2020 Project for Discrete Mathematics.
+Link - https://2048-dm-ip9.netlify.app/
 
 Project Members:
                   1. Nishant P. Borah,
