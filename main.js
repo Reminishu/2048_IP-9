@@ -21,6 +21,7 @@ function reset()
     }
     cell[j] = 2
     score = 0
+    // draw()
     keyboard()
     return
 }
@@ -28,11 +29,11 @@ function reset()
 // Input listener
 function keyboard()
 {
-    let z = 0
     document.onkeydown = function(e)
     {
         if(movesLeft())
         {
+            // draw()
             switch (e.keyCode)
             {
                 case 37:
@@ -58,6 +59,7 @@ function keyboard()
             // This is loss
             console.log('lost') //debugging
         }
+        draw()
     }
 }
 
@@ -86,8 +88,8 @@ function move(key)
                         {
                             cell[zeroIndex] = cell[j]
                             cell[j] = 0
-                            zeroFlag = false
                             headIndex = zeroIndex
+                            zeroIndex = j
                         }
                     }
                     else if(cell[j] === 0 && !zeroFlag)     //first zero at start or after a unique value
@@ -98,6 +100,9 @@ function move(key)
                     else if(cell[j] === headValue)      //we encounter a consecutive matching non-zero value
                     {
                         merge(j,headIndex)
+                        headIndex = headValue = -1
+                        zeroFlag = true
+                        zeroIndex = j
                     }
                 }
             }
@@ -118,8 +123,8 @@ function move(key)
                         {
                             cell[zeroIndex] = cell[j]
                             cell[j] = 0
-                            zeroFlag = false
                             headIndex = zeroIndex
+                            zeroIndex = j
                         }
                     }
                     else if(cell[j] === 0 && !zeroFlag)     //first zero at start or after a unique value
@@ -130,6 +135,9 @@ function move(key)
                     else if(cell[j] === headValue)      //we encounter a consecutive matching non-zero value
                     {
                         merge(j,headIndex)
+                        headIndex = headValue = -1
+                        zeroFlag = true
+                        zeroIndex = j
                     }
                 }
             }
@@ -150,8 +158,8 @@ function move(key)
                         {
                             cell[zeroIndex] = cell[j]
                             cell[j] = 0
-                            zeroFlag = false
                             headIndex = zeroIndex
+                            zeroIndex = j
                         }
                     }
                     else if(cell[j] === 0 && !zeroFlag)     //first zero at start or after a unique value
@@ -162,6 +170,9 @@ function move(key)
                     else if(cell[j] === headValue)      //we encounter a consecutive matching non-zero value
                     {
                         merge(j,headIndex)
+                        headIndex = headValue = -1
+                        zeroFlag = true
+                        zeroIndex = j
                     }
                 }
             }
@@ -182,8 +193,8 @@ function move(key)
                         {
                             cell[zeroIndex] = cell[j]
                             cell[j] = 0
-                            zeroFlag = false
                             headIndex = zeroIndex
+                            zeroIndex = j
                         }
                     }
                     else if(cell[j] === 0 && !zeroFlag)     //first zero at start or after a unique value
@@ -194,6 +205,9 @@ function move(key)
                     else if(cell[j] === headValue)      //we encounter a consecutive matching non-zero value
                     {
                         merge(j,headIndex)
+                        headIndex = headValue = -1
+                        zeroFlag = true
+                        zeroIndex = j
                     }
                 }
             }
@@ -201,6 +215,7 @@ function move(key)
             
     }
     insertTile()
+    draw()
     console.log(cell)       //debugging
     return
 }
@@ -268,6 +283,67 @@ function movesLeft()
     return false
 }
 
+
+// Update tile
+function draw()
+{
+    // reset()
+    const tile1 =document.getElementById('tile1')
+    const tile2 =document.getElementById('tile2')
+    const tile3 =document.getElementById('tile3')
+    const tile4 =document.getElementById('tile4')
+    const tile5 =document.getElementById('tile5')
+    const tile6 =document.getElementById('tile6')
+    const tile7 =document.getElementById('tile7')
+    const tile8 =document.getElementById('tile8')
+    const tile9 =document.getElementById('tile9')
+    const tile10 =document.getElementById('tile10')
+    const tile11 =document.getElementById('tile11')
+    const tile12 =document.getElementById('tile12')
+    const tile13 =document.getElementById('tile13')
+    const tile14 =document.getElementById('tile14')
+    const tile15 =document.getElementById('tile15')
+    const tile16 =document.getElementById('tile16')
+
+    // if(cell[0] !== 0)
+    // {
+    //     tile1.textContent=cell[0]
+    // }
+
+    tile1.textContent=  cell[0]
+    tile2.textContent=  cell[1]
+    tile3.textContent=  cell[2]
+    tile4.textContent=  cell[3]
+    tile5.textContent=  cell[4]
+    tile6.textContent=  cell[5]
+    tile7.textContent=  cell[6]
+    tile8.textContent=  cell[7]
+    tile9.textContent=  cell[8]
+    tile10.textContent= cell[9]
+    tile11.textContent= cell[10]
+    tile12.textContent= cell[11]
+    tile13.textContent= cell[12]
+    tile14.textContent= cell[13]
+    tile15.textContent= cell[14]
+    tile16.textContent= cell[15]
+
+
+    // tile2.textContent=  (cell[1] !== 0 ? cell[1].toString() : n)
+    // tile3.textContent=  (cell[1] !== 0 ? cell[2] : n)
+    // tile4.textContent=  (cell[1] !== 0 ? cell[3] : n)
+    // tile5.textContent=  (cell[1] !== 0 ? cell[4] : n)
+    // tile6.textContent=  (cell[1] !== 0 ? cell[5] : n)
+    // tile7.textContent=  (cell[1] !== 0 ? cell[6] : n)
+    // tile8.textContent=  (cell[1] !== 0 ? cell[7] : n)
+    // tile9.textContent=  (cell[1] !== 0 ? cell[8] : n)
+    // tile10.textContent= (cell[1] !== 0 ? cell[9] : n)
+    // tile11.textContent= (cell[1] !== 0 ? cell[10] : n)
+    // tile12.textContent= (cell[1] !== 0 ? cell[11] : n)
+    // tile13.textContent= (cell[1] !== 0 ? cell[12] : n)
+    // tile14.textContent= (cell[1] !== 0 ? cell[13] : n)
+    // tile15.textContent= (cell[1] !== 0 ? cell[14] : n)
+    // tile16.textContent= (cell[1] !== 0 ? cell[15] : n)
+}
 
 
 // debug
