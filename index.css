@@ -1,8 +1,10 @@
 html{
-    height: 100%;
+    max-height: auto;
+    max-width: auto;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
+    overflow: auto;
 }
 
 body{
@@ -35,14 +37,15 @@ body{
     height: auto;
     z-index: 999;
     opacity: 0.5;
-    position: fixed;
+    position: relative;
+    overflow: auto;
 }
 
 .mainlayer{
     margin:auto;
     width: auto;
     height: auto;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
 }
 
@@ -72,7 +75,8 @@ body{
 
 .container {
     height: auto;
-    margin: 2rem;
+    width: auto;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -188,6 +192,18 @@ body{
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
+}
+
+.num0{
+  background: white;
+  color: darkred;
+  font-size: 90px;
+  transition:all .3s ease;
+  -moz-transition:all .3s ease;
+  -webkit-transition:all .3s ease; 
+  animation: anim1 .5s;
+  -moz-animation: anim1 .5s;
+  -webkit-animation: anim1 .5s;
 }
 
 .num2{
