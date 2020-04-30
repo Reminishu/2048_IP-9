@@ -11,6 +11,24 @@ body{
     background-color: whitesmoke;
     overflow: auto;
 }
+.bg-1 {
+    background-color: #fff787;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: #eed545;
+  }
+  
+  .navbar-nav :hover {
+    color: #ecb723 !important;
+  }
 
 .toplayer{
     width: 100%;
@@ -102,6 +120,8 @@ body{
     font-size: 3rem;
     text-align: center;
     padding: 4rem;
+    border-style: solid;
+    border-color: black;
   }
   .cell-1 {
     background: deepskyblue;
