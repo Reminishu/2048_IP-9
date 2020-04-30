@@ -125,51 +125,67 @@ body{
   }
   .cell-1 {
     background: deepskyblue;
+    border-spacing: 1px;
   }
   .cell-2 {
     background: orangered;
+    border-spacing: 1px;
   }
   .cell-3 {
     background: royalblue;
+    border-spacing: 1px;
   }
   .cell-4 {
     background: gold;
+    border-spacing: 1px;
   }
   .cell-5 {
     background: blueviolet;
+    border-spacing: 1px;
   }
   .cell-6 {
     background: limegreen;
+    border-spacing: 1px;
   }
   .cell-7 {
     background: coral;
+    border-spacing: 1px;
   }
   .cell-8 {
     background: lightseagreen;
+    border-spacing: 1px;
   }
   .cell-9 {
     background: maroon;
+    border-spacing: 1px;
   }
   .cell-10 {
     background: deepskyblue;
+    border-spacing: 1px;
   }
   .cell-11 {
     background: orangered;
+    border-spacing: 1px;
   }
   .cell-12 {
     background: royalblue;
+    border-spacing: 1px;
   }
   .cell-13 {
     background: gold;
+    border-spacing: 1px;
   }
   .cell-14 {
     background: blueviolet;
+    border-spacing: 1px;
   }
   .cell-15 {
     background: limegreen;
+    border-spacing: 1px;
   }
   .cell-16 {
     background: coral;
+    border-spacing: 1px;
   }
 
 
