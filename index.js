@@ -66,6 +66,7 @@ function keyboard()
         else
         {
             // This is loss
+            loss()
             console.log('lost') //debugging
         }
         draw()
@@ -712,7 +713,7 @@ function buttonDown()
 function buttonRight()
 {
     move(2)
-    draw()
+    draw()  
 }
 
 function startGame()
@@ -721,16 +722,14 @@ function startGame()
     draw()
     document.getElementById("overlay").style.display = "none"
 }
-// function off() {
-//     document.getElementById("overlay").style.display = "none";
-//   }
-// function overLay()
-// {
-//     reset()
-//     draw()
-//     off()
 
-// }
+function loss()
+{
+    document.getElementById('lossMessage').classList.remove('d-none')
+    document.getElementById('lossMessage').innerText = ('Game Over\nYour score: ' + score)
+    document.getElementById("overlayButton").innerText = "Click here to retry"
+    document.getElementById("overlay").style.display = "block"
+}
 
   console.log(localStorage.highScore)
 // debug

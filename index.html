@@ -73,7 +73,8 @@ crossorigin="anonymous">
 <!-- Buttons not used right now -->
 <div id="overlay">
     <div class='center'></div>
-    <button class='block' onclick="startGame()" >Click here to begin
+    <div id='lossMessage' class='d-none'>Game Over<br>Your score: 0</div>
+    <button id='overlayButton' class='block' onclick="startGame()" >Click here to begin
     </button>
 </div>
 <div class="container">
