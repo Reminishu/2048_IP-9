@@ -310,7 +310,24 @@ function draw()
     if(tile1)
     {
         tile1.textContent=  cell[0]
-        if(cell[0] === 2)tile1.className = 'num2'
+        if(cell[0] === 0){tile1.className = 'num0'}
+        if(cell[0] === 2){tile1.className = 'num2'}
+        if(cell[0] === 4){tile1.className = 'num4'}
+        if(cell[0] === 8){tile1.className = 'num8'}
+        if(cell[0] === 16){tile1.className = 'num16'}
+        if(cell[0] === 32){tile1.className = 'num32'}
+        if(cell[0] === 64){tile1.className = 'num64'}
+        if(cell[0] === 128){tile1.className = 'num128'}
+        if(cell[0] === 256){tile1.className = 'num256'}
+        if(cell[0] === 512){tile1.className = 'num512'}
+        if(cell[0] === 1024){tile1.className = 'num1024'}
+        if(cell[0] === 2048){tile1.className = 'num2048'}
+        if(cell[0] === 4096){tile1.className = 'num4096'}
+        if(cell[0] === 8192){tile1.className = 'num8192'}
+        if(cell[0] === 16384){tile1.className = 'num16384'}
+        if(cell[0] === 32768){tile1.className = 'num32768'}
+        if(cell[0] === 65536){tile1.className = 'num65536'}
+        if(cell[0] === 131072){tile1.className = 'num131072'}
     }
     if(tile2){tile2.textContent=  cell[1]}
     if(tile3){tile3.textContent=  cell[2]}
