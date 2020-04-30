@@ -72,7 +72,7 @@ body{
  #Score{
      font-size: 48px;
  }
-
+ 
 .container {
     height: auto;
     width: auto;
@@ -80,6 +80,34 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  #overlay {
+    position: absolute; /* Sit on top of the page content */
+    width: auto; /* Full width (cover the whole page) */
+    height: auto; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; 
+  }
+  .block {
+    display: block;
+    width: 100%;
+    font-size: 48px;
+    cursor: pointer;
+    text-align: center;
+    background-color: transparent;
+    border-color: transparent;
   }
   .cell {
     color: gold;
