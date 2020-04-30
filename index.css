@@ -1,9 +1,10 @@
 html{
     max-height: auto;
-    max-width: fit-content;
+    max-width: auto;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
+    overflow: auto;
 }
 
 body{
