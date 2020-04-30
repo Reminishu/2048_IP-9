@@ -245,7 +245,7 @@ body{
 }
 
 .num0{
-  background: white;
+  background: rgb(245, 234, 199);
   color: darkred;
   font-size: 90px;
   transition:all .5s ease;
@@ -257,7 +257,7 @@ body{
 }
 
 .num2{
-    background: white;
+    background: rgb(245, 219, 190);
     color: greenyellow;
     font-size: 90px;
     transition:all .5s ease;
@@ -269,7 +269,7 @@ body{
 }
 
 .num4{
-    background: white;
+    background: rgb(248, 215, 155);
     color: yellow;
     font-size: 90px;
     transition:all .5s ease;
@@ -281,7 +281,7 @@ body{
 }
 
 .num8{
-    background: white;
+    background: rgb(247, 183, 130);
     color: red;
     font-size: 90px;
     transition:all .5s ease;
@@ -293,7 +293,7 @@ body{
 }
 
 .num16{
-    background: white;
+    background: rgb(246, 175, 93);
     color: blue;
     font-size: 75px;
     transition:all .5s ease;
@@ -305,7 +305,7 @@ body{
 }
 
 .num32{
-    background: white;
+    background: rgb(245, 162, 55);
     color: violet;
     font-size: 75px;
     transition:all .5s ease;
@@ -317,7 +317,7 @@ body{
 }
 
 .num64{
-    background: white;
+    background: rgb(240, 150, 34);
     color: hotpink;
     font-size: 75px;
     transition:all .5s ease;
@@ -329,7 +329,7 @@ body{
 }
 
 .num128{
-    background: white;
+    background: rgb(241, 131, 40);
     color: blue;
     font-size: 60px;
     transition:all .5s ease;
@@ -341,7 +341,7 @@ body{
 }
 
 .num256{
-    background: white;
+    background: rgb(246, 122, 39);
     color: darkmagenta;
     font-size: 60px;
     transition:all .5s ease;
@@ -353,7 +353,7 @@ body{
 }
 
 .num512{
-    background: white;
+    background: rgb(229, 243, 38);
     color: darkorange;
     font-size: 60px;
     transition:all .5s ease;
@@ -365,7 +365,7 @@ body{
 }
 
 .num1024{
-    background: white;
+    background: rgb(243, 159, 24);
     color: darkorchid;
     font-size: 50px;
     transition:all .5s ease;
@@ -377,7 +377,7 @@ body{
 }
 
 .num2048{
-    background: lightskyblue;
+    background: rgb(139, 241, 113);
     color: darkred;
     font-size: 50px;
     transition:all .5s ease;
@@ -389,7 +389,7 @@ body{
 }
 
 .num4096{
-    background: lightskyblue;
+    background: rgb(177, 220, 246);
     color: fuchsia;
     font-size: 50px;
     transition:all .5s ease;
@@ -401,7 +401,7 @@ body{
 }
 
 .num8192{
-    background: lightskyblue;
+    background: rgb(150, 214, 253);
     color: brown;
     font-size: 50px;
     transition:all .5s ease;
@@ -425,7 +425,7 @@ body{
 }
 
 .num32768{
-    background: lightskyblue;
+    background: rgb(107, 194, 248);
     color: darkcyan;
     font-size: 40px;
     transition:all .5s ease;
@@ -437,8 +437,8 @@ body{
 }
 
 .num65536{
-    background: darkred;
-    color: darkgrey;
+    background: rgb(255, 24, 24);
+    color: rgb(0, 0, 0);
     font-size: 40px;
     transition:all .5s ease;
     -moz-transition:all .5s ease;
