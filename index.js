@@ -1,7 +1,16 @@
 let cell = [0]      //board array
 let score = 0       //score for session
+
 let highScore = 0   //high score
 let win = false
+if (localStorage.highScore)
+{
+    highScore=localStorage.highScore
+}
+else
+{
+    localStorage.highScore=highScore
+}
 
 
 // Initialization and reset
@@ -101,8 +110,11 @@ function move(key)
                     {
                         merge(j,headIndex)
                         headIndex = headValue = -1
-                        zeroFlag = true
-                        zeroIndex = j
+                        if(!zeroFlag)
+                        {
+                            zeroFlag = true
+                            zeroIndex = j
+                        }
                     }
                 }
             }
@@ -136,8 +148,11 @@ function move(key)
                     {
                         merge(j,headIndex)
                         headIndex = headValue = -1
-                        zeroFlag = true
-                        zeroIndex = j
+                        if(!zeroFlag)
+                        {
+                            zeroFlag = true
+                            zeroIndex = j
+                        }
                     }
                 }
             }
@@ -171,8 +186,11 @@ function move(key)
                     {
                         merge(j,headIndex)
                         headIndex = headValue = -1
-                        zeroFlag = true
-                        zeroIndex = j
+                        if(!zeroFlag)
+                        {
+                            zeroFlag = true
+                            zeroIndex = j
+                        }
                     }
                 }
             }
@@ -206,8 +224,11 @@ function move(key)
                     {
                         merge(j,headIndex)
                         headIndex = headValue = -1
-                        zeroFlag = true
-                        zeroIndex = j
+                        if(!zeroFlag)
+                        {
+                            zeroFlag = true
+                            zeroIndex = j
+                        }
                     }
                 }
             }
@@ -226,6 +247,11 @@ function merge(a,b)
     cell[b] = cell[b]*2
     cell[a] = 0
     score+= cell[b]
+    if(score>highScore)
+    {
+        highScore=score
+        localStorage.highScore=highScore
+    }
     console.log(score)  //debugging
     if(cell[b] === 2048)
     {
@@ -308,6 +334,9 @@ function draw()
 
     const scoreShow = document.getElementById('Score')
     if(scoreShow){scoreShow.innerText = score.toString()}
+
+    const highScoreShow = document.getElementById('HighScore')
+    if(highScoreShow){highScoreShow.innerText = localStorage.highScore}
 
     if(tile1)
     {
@@ -690,18 +719,20 @@ function startGame()
 {
     reset()
     draw()
+    document.getElementById("overlay").style.display = "none"
 }
-function off() {
-    document.getElementById("overlay").style.display = "none";
-  }
-function overLay()
-{
-    reset()
-    draw()
-    off()
+// function off() {
+//     document.getElementById("overlay").style.display = "none";
+//   }
+// function overLay()
+// {
+//     reset()
+//     draw()
+//     off()
 
-}
+// }
 
+  console.log(localStorage.highScore)
 // debug
 // reset()
 let abr = [0]
