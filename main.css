@@ -31,9 +31,9 @@ body{
   }
 
 .toplayer{
-    width: 100%;
-    height: 100%;
-    z-index: initial;
+    width: fit-content;
+    height: fit-content%;
+    z-index: auto;
     opacity: 0.5;
     position: fixed;
 }
