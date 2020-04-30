@@ -31,9 +31,9 @@ body{
   }
 
 .toplayer{
-    width: fit-content;
-    height: fit-content;
-    z-index: auto;
+    width: auto;
+    height: auto;
+    z-index: 999;
     opacity: 0.5;
     position: fixed;
 }
@@ -66,47 +66,9 @@ body{
     position: relative;
 }
 
-.scores:before{
-    content: "";
-    display: block;
-    border-width: 18px;
-    border-color: transparent whitesmoke transparent transparent ;
-    border-style: solid;
-    position: absolute;
-    top:50%;
-    left:-36px;
-    margin-top:-18px;
-}
-
  #Score{
      font-size: 48px;
  }
- 
- #plus{
-     position: absolute;
-     bottom: 0px;
-     font-size: 25px;
-     color: lightskyblue;
-     opacity: .75;
-     right: 0;
-     top:5px;    
- }
-
-#plus.show{
-    opacity: .75;
-    transition:all .4s ease;
-    -moz-transition:all .4s ease;
-    -webkit-transition:all .4s ease;
-}
-
-#plus.hide{
-    opacity: 0;
-    transition:all .4s ease;   
-    -moz-transition:all .4s ease;
-    -webkit-transition:all .4s ease; 
-}
-
-
 
 .container {
     height: auto;
@@ -117,9 +79,11 @@ body{
   }
   .cell {
     color: gold;
-    font-size: 3rem;
+    height: fit-content;
+    width: fit-content;
+    font-size: 2rem;
     text-align: center;
-    padding: 4rem;
+    padding: 3rem;
     border-style: solid;
     border-color: white;
   }
@@ -220,9 +184,7 @@ body{
     width: auto;
   }
 
-
-
-div{
+  div{
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
