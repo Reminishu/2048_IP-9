@@ -280,3 +280,13 @@ for(let i=0; i<16; i++)
 //keyboard(); 
 console.log(abr)
 
+
+
+//For grid to work, something like this is needed -
+//domobj = function(){}
+//var grid = document.CreateElement('grid)
+//grid.innertext = num;
+//grid.classname = 'hor' + obj
+//poaition[0] + '' + 'ver' + obj
+//position[1] + '' + 'num' + num;
+// + some other stuff I don't quite understand

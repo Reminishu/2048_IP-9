@@ -92,6 +92,68 @@ body{
 /* Incomplete here */
 /*to do - add buttons (wsad). */
 
+.hor0{
+    top:10px;
+    transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -webkit-transition:all .3s ease; 
+}
+.hor1{
+    top:120px;
+    transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -webkit-transition:all .3s ease; 
+}
+.hor2{
+    top:230px;
+    transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -webkit-transition:all .3s ease; 
+}
+.hor3{
+    top:340px;
+    transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -webkit-transition:all .3s ease; 
+}
+
+.ver0{
+    left:10px;
+    transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -webkit-transition:all .3s ease; 
+}
+.ver1{
+    left:120px;
+    transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -webkit-transition:all .3s ease; 
+}
+.ver2{
+    left:230px;
+    transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -webkit-transition:all .3s ease; 
+}
+.ver3{
+    left:340px;
+    transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -webkit-transition:all .3s ease; 
+}
+
+grid{
+    display: block;
+    height: 90px; 
+    width: 90px; 
+    position: absolute;
+    line-height: 90px;
+    background: dimgray;
+    font-size: 40px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
 
 div{
     user-select: none;
