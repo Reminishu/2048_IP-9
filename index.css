@@ -1,5 +1,6 @@
 html{
-    height: 100%;
+    max-height: auto;
+    max-width: auto;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -189,6 +190,18 @@ body{
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
+}
+
+.num0{
+  background: white;
+  color: darkred;
+  font-size: 90px;
+  transition:all .3s ease;
+  -moz-transition:all .3s ease;
+  -webkit-transition:all .3s ease; 
+  animation: anim1 .5s;
+  -moz-animation: anim1 .5s;
+  -webkit-animation: anim1 .5s;
 }
 
 .num2{
