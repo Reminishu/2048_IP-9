@@ -348,9 +348,14 @@ function buttonRight()
     draw()
 }
 
+function startGame()
+{
+    reset()
+    draw()
+}
 
 // debug
-reset()
+// reset()
 let abr = [0]
 for(let i=0; i<16; i++)
 {
