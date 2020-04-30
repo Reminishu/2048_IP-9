@@ -2,7 +2,7 @@ let cell = [0]      //board array
 let score = 0       //score for session
 
 let highScore = 0   //high score
-let win = false
+let lose = false
 if (localStorage.highScore)
 {
     highScore=localStorage.highScore
@@ -256,7 +256,7 @@ function merge(a,b)
     if(cell[b] === 2048)
     {
         //win
-        // alert('won')
+        alert("Congratulations! You've reached 2048.")
     }
     return
 }
