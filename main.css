@@ -379,7 +379,7 @@ div{
 }
 
 .button1 {
-    background-color: rgb(0, 255, 179); /* Green */
+    background-color: rgb(0, 255, 179);
     border: none;
     color: black;
     padding-top: 15px;
@@ -390,7 +390,7 @@ div{
 }
 
 .button2 {
-    background-color: rgb(0, 255, 179); /* Green */
+    background-color: rgb(0, 255, 179);
     border: none;
     color: black;
     padding: 30px;
@@ -401,7 +401,7 @@ div{
 }
 
 .button3 {
-    background-color: rgb(0, 255, 179); /* Green */
+    background-color: rgb(0, 255, 179);
     border: none;
     color: black;
     padding: 30px;
@@ -412,7 +412,7 @@ div{
 }
 
 .button4 {
-    background-color: rgb(0, 255, 179); /* Green */
+    background-color: rgb(0, 255, 179);
     border: none;
     color: black;
     padding: 15px;
