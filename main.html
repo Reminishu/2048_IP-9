@@ -3,6 +3,16 @@
 <title>
 2048_IP-9
 </title>
+<!--Meta tags needed-->
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--css Links incl. Bootstrap-->
+<link rel= "stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+crossorigin="anonymous">
+
 
 <link rel="stylesheet"
       type = "text/css"
@@ -12,21 +22,32 @@
         src="main.js">
             </script>
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </head>
 <body>
-<center>
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand"> 2048_IP-9</a>
 
+</nav>
+
+<div class ="text-center bg-1">
+
+<div class="col-sm-12">
 <H1>
-Original version of '2048' made by <b> Gabriele Cirulli </b> available <a href="https://2048.love2dev.com">here</a> used as reference. 
-</H1>
 
-<p>
-The aim of this game is to join the tiles to get the highest number possible.
-</p> 
+</H1>
+</div>
+
+
+
+ 
 <div class="toplayer"></div>
 <div class="mainlayer">
-<div class="IP-9_2048">2048_IP-9</div>
-<div class="scores">
+
+<div class="col-sm-2 scores">
     <label id="Score" 0>
 
     </label> 
@@ -34,10 +55,12 @@ The aim of this game is to join the tiles to get the highest number possible.
         </label> 
     <div id="plus"></div>
 </div>
+<div class ="col-sm-2 btn-group">
 <a href="up" class="button1">Button</a>
 <a href="left" class="button2">Button</a>
 <a href="right" class="button3">Button</a>
 <a href="down" class="button4">Button</a>
+</div>
 <!-- Buttons not used right now -->
 <div class="container">
     <div id="tile1" class="cell cell-1"> 0</div>
@@ -57,16 +80,15 @@ The aim of this game is to join the tiles to get the highest number possible.
     <div id="tile15" class="cell cell-15"> 0</div> 
     <div id="tile16" class="cell cell-16"> 0</div> 
   </div>
-<p>
-Though the name of the game is 2048, theoritically, the highest number possible is 65536 in our version of the game. The original version made by Gabriele Cirulli randomly gives you a '4' instead of a '2' as the starting number taking the theoritical maximum to 131072 assuming the last digit spawned is a '4'.
-</p>
+
 
 <img src="xkcd-1334.png" alt="Gabriele calls this his biggest achievement. (Not Hotlinked so it works offline)">
 
 <p>
 <a href="https://xkcd.com/1344/">Link - https://xkcd.com/1344/</a>
 </p>
+</div>
 
-</center>
 </body>
+
 </html>

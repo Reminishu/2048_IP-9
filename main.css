@@ -11,11 +11,29 @@ body{
     background-color: whitesmoke;
     overflow: auto;
 }
+.bg-1 {
+    background-color: #fff787;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: #eed545;
+  }
+  
+  .navbar-nav :hover {
+    color: #ecb723 !important;
+  }
 
 .toplayer{
-    width: 100%;
-    height: 100%;
-    z-index: initial;
+    width: fit-content;
+    height: fit-content%;
+    z-index: auto;
     opacity: 0.5;
     position: fixed;
 }
@@ -102,54 +120,72 @@ body{
     font-size: 3rem;
     text-align: center;
     padding: 4rem;
+    border-style: solid;
+    border-color: black;
   }
   .cell-1 {
     background: deepskyblue;
+    border-spacing: 1px;
   }
   .cell-2 {
     background: orangered;
+    border-spacing: 1px;
   }
   .cell-3 {
     background: royalblue;
+    border-spacing: 1px;
   }
   .cell-4 {
     background: gold;
+    border-spacing: 1px;
   }
   .cell-5 {
     background: blueviolet;
+    border-spacing: 1px;
   }
   .cell-6 {
     background: limegreen;
+    border-spacing: 1px;
   }
   .cell-7 {
     background: coral;
+    border-spacing: 1px;
   }
   .cell-8 {
     background: lightseagreen;
+    border-spacing: 1px;
   }
   .cell-9 {
     background: maroon;
+    border-spacing: 1px;
   }
   .cell-10 {
     background: deepskyblue;
+    border-spacing: 1px;
   }
   .cell-11 {
     background: orangered;
+    border-spacing: 1px;
   }
   .cell-12 {
     background: royalblue;
+    border-spacing: 1px;
   }
   .cell-13 {
     background: gold;
+    border-spacing: 1px;
   }
   .cell-14 {
     background: blueviolet;
+    border-spacing: 1px;
   }
   .cell-15 {
     background: limegreen;
+    border-spacing: 1px;
   }
   .cell-16 {
     background: coral;
+    border-spacing: 1px;
   }
 
 
