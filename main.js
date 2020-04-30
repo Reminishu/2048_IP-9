@@ -21,7 +21,7 @@ function reset()
     }
     cell[j] = 2
     score = 0
-    // draw()
+    draw()
     keyboard()
     return
 }
@@ -287,7 +287,6 @@ function movesLeft()
 // Update tile
 function draw()
 {
-    // reset()
     const tile1 =document.getElementById('tile1')
     const tile2 =document.getElementById('tile2')
     const tile3 =document.getElementById('tile3')
@@ -305,44 +304,48 @@ function draw()
     const tile15 =document.getElementById('tile15')
     const tile16 =document.getElementById('tile16')
 
-    // if(cell[0] !== 0)
-    // {
-    //     tile1.textContent=cell[0]
-    // }
+    const scoreShow = document.getElementById('Score')
+    if(scoreShow){scoreShow.innerText = score.toString()}
 
-    tile1.textContent=  cell[0]
-    tile2.textContent=  cell[1]
-    tile3.textContent=  cell[2]
-    tile4.textContent=  cell[3]
-    tile5.textContent=  cell[4]
-    tile6.textContent=  cell[5]
-    tile7.textContent=  cell[6]
-    tile8.textContent=  cell[7]
-    tile9.textContent=  cell[8]
-    tile10.textContent= cell[9]
-    tile11.textContent= cell[10]
-    tile12.textContent= cell[11]
-    tile13.textContent= cell[12]
-    tile14.textContent= cell[13]
-    tile15.textContent= cell[14]
-    tile16.textContent= cell[15]
+    if(tile1){tile1.textContent=  cell[0]}
+    if(tile2){tile2.textContent=  cell[1]}
+    if(tile3){tile3.textContent=  cell[2]}
+    if(tile4){tile4.textContent=  cell[3]}
+    if(tile5){tile5.textContent=  cell[4]}
+    if(tile6){tile6.textContent=  cell[5]}
+    if(tile7){tile7.textContent=  cell[6]}
+    if(tile8){tile8.textContent=  cell[7]}
+    if(tile9){tile9.textContent=  cell[8]}
+    if(tile10){tile10.textContent= cell[9]}
+    if(tile11){tile11.textContent= cell[10]}
+    if(tile12){tile12.textContent= cell[11]}
+    if(tile13){tile13.textContent= cell[12]}
+    if(tile14){tile14.textContent= cell[13]}
+    if(tile15){tile15.textContent= cell[14]}
+    if(tile16){tile16.textContent= cell[15]}
+}
 
 
-    // tile2.textContent=  (cell[1] !== 0 ? cell[1].toString() : n)
-    // tile3.textContent=  (cell[1] !== 0 ? cell[2] : n)
-    // tile4.textContent=  (cell[1] !== 0 ? cell[3] : n)
-    // tile5.textContent=  (cell[1] !== 0 ? cell[4] : n)
-    // tile6.textContent=  (cell[1] !== 0 ? cell[5] : n)
-    // tile7.textContent=  (cell[1] !== 0 ? cell[6] : n)
-    // tile8.textContent=  (cell[1] !== 0 ? cell[7] : n)
-    // tile9.textContent=  (cell[1] !== 0 ? cell[8] : n)
-    // tile10.textContent= (cell[1] !== 0 ? cell[9] : n)
-    // tile11.textContent= (cell[1] !== 0 ? cell[10] : n)
-    // tile12.textContent= (cell[1] !== 0 ? cell[11] : n)
-    // tile13.textContent= (cell[1] !== 0 ? cell[12] : n)
-    // tile14.textContent= (cell[1] !== 0 ? cell[13] : n)
-    // tile15.textContent= (cell[1] !== 0 ? cell[14] : n)
-    // tile16.textContent= (cell[1] !== 0 ? cell[15] : n)
+// On-screen button logic
+function buttonLeft()
+{
+    move(4)
+    draw()
+}
+function buttonUp()
+{
+    move(1)
+    draw()
+}
+function buttonDown()
+{
+    move(3)
+    draw()
+}
+function buttonRight()
+{
+    move(2)
+    draw()
 }
 
 
