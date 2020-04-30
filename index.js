@@ -2,7 +2,6 @@ let cell = [0]      //board array
 let score = 0       //score for session
 
 let highScore = 0   //high score
-let lose = false
 if (localStorage.highScore)
 {
     highScore=localStorage.highScore
@@ -278,9 +277,7 @@ function insertTile()
         return
     }
     //With the inbuilt random we first get an index for buffer array, we use the value stored at that index as the target index for the new tile. We again take a random value and if it's less than 0.9, we insert 2 else we insert 4, simulating a 10-90 split for 4-2 insertion.
-    let f = arr[Math.floor(Math.random() * arr.length)]
-    cell[f] = (Math.random( ) > 0.9 ? 4 : 2)
-    console.log(f)      //debugging
+    cell[arr[Math.floor(Math.random() * arr.length)]] = (Math.random( ) > 0.9 ? 4 : 2)
     return
 }
 
