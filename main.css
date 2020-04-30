@@ -32,7 +32,7 @@ body{
 
 .toplayer{
     width: fit-content;
-    height: fit-content%;
+    height: fit-content;
     z-index: auto;
     opacity: 0.5;
     position: fixed;
@@ -109,7 +109,7 @@ body{
 
 
 .container {
-    height: fit-content;
+    height: auto;
     margin: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -126,66 +126,98 @@ body{
   .cell-1 {
     background: deepskyblue;
     border-spacing: 1px;
+    height: auto;
+    width: auto;
   }
   .cell-2 {
     background: orangered;
     border-spacing: 1px;
+    height: auto;
+    width: auto;
   }
   .cell-3 {
     background: royalblue;
     border-spacing: 1px;
+    height: auto;
+    width: auto;
   }
   .cell-4 {
     background: gold;
     border-spacing: 1px;
+    height: auto;
+    width: auto;
   }
   .cell-5 {
     background: blueviolet;
     border-spacing: 1px;
+    height: auto;
+    width: auto;
   }
   .cell-6 {
     background: limegreen;
     border-spacing: 1px;
+    height: auto;
+    width: auto;
   }
   .cell-7 {
     background: coral;
     border-spacing: 1px;
+    height: auto;
+    width: auto;
   }
   .cell-8 {
     background: lightseagreen;
     border-spacing: 1px;
+    height: auto;
+    width: auto;
   }
   .cell-9 {
     background: maroon;
     border-spacing: 1px;
+    height: auto;
+    width: auto;
   }
   .cell-10 {
     background: deepskyblue;
     border-spacing: 1px;
+    height: auto;
+    width: auto;
   }
   .cell-11 {
     background: orangered;
     border-spacing: 1px;
+    height: auto;
+    width: auto;
   }
   .cell-12 {
     background: royalblue;
     border-spacing: 1px;
+    height: auto;
+    width: auto;
   }
   .cell-13 {
     background: gold;
     border-spacing: 1px;
+    height: auto;
+    width: auto;
   }
   .cell-14 {
     background: blueviolet;
     border-spacing: 1px;
+    height: auto;
+    width: auto;
   }
   .cell-15 {
     background: limegreen;
     border-spacing: 1px;
+    height: auto;
+    width: auto;
   }
   .cell-16 {
     background: coral;
     border-spacing: 1px;
+    height: auto;
+    width: auto;
   }
 
 
