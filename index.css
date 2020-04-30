@@ -92,7 +92,12 @@ body{
     background-color: rgba(0,0,0,0.5); /* Black background with opacity */
     z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
-
+    transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    -webkit-transition:all .5s ease; 
+    animation: anim1 .5s;
+    -moz-animation: anim1 .5s;
+    -webkit-animation: anim1 .5s;
   }
   .center {
     display: flex;
