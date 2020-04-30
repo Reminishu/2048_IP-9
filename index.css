@@ -14,7 +14,7 @@ body{
     overflow: auto;
 }
 .bg-1 {
-    background-color: rgb(156, 209, 242);
+    background-color: rgb(131, 200, 218);
 }
 
 .navbar {
@@ -25,7 +25,7 @@ body{
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
-    background-color: rgb(156, 209, 242);
+    background-color: rgb(32, 85, 119);
   }
   
   .navbar-nav :hover {
