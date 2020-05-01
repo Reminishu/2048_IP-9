@@ -317,7 +317,7 @@ body{
 }
 
 .num64{
-    background: rgb(240, 150, 34);
+    background: rgb(220, 140, 34);
     color: darksalmon;
     font-size: 75px;
     transition:all .5s ease;
