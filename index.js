@@ -80,6 +80,7 @@ function move(key)
     let headIndex = -1      //index of the unique value
     let zeroIndex = -1      //index of first zero in sequence
     let zeroFlag = false    //flag for zero encounter
+    let tileMoved = false       //flag for board change
     switch(key)      //keyboard() here is the listener function
     {
         case 1:     //Up
@@ -99,6 +100,7 @@ function move(key)
                             cell[j] = 0
                             headIndex = zeroIndex
                             zeroIndex+=4
+                            tileMoved = true
                         }
                     }
                     else if(cell[j] === 0 && !zeroFlag)     //first zero at start or after a unique value
@@ -109,6 +111,7 @@ function move(key)
                     else if(cell[j] === headValue)      //we encounter a consecutive matching non-zero value
                     {
                         merge(j,headIndex)
+                        tileMoved = true
                         headIndex = headValue = -1
                         if(!zeroFlag)
                         {
@@ -137,6 +140,7 @@ function move(key)
                             cell[j] = 0
                             headIndex = zeroIndex
                             zeroIndex--
+                            tileMoved = true
                         }
                     }
                     else if(cell[j] === 0 && !zeroFlag)     //first zero at start or after a unique value
@@ -147,6 +151,7 @@ function move(key)
                     else if(cell[j] === headValue)      //we encounter a consecutive matching non-zero value
                     {
                         merge(j,headIndex)
+                        tileMoved = true
                         headIndex = headValue = -1
                         if(!zeroFlag)
                         {
@@ -175,6 +180,7 @@ function move(key)
                             cell[j] = 0
                             headIndex = zeroIndex
                             zeroIndex-=4
+                            tileMoved = true
                         }
                     }
                     else if(cell[j] === 0 && !zeroFlag)     //first zero at start or after a unique value
@@ -185,6 +191,7 @@ function move(key)
                     else if(cell[j] === headValue)      //we encounter a consecutive matching non-zero value
                     {
                         merge(j,headIndex)
+                        tileMoved = true
                         headIndex = headValue = -1
                         if(!zeroFlag)
                         {
@@ -213,6 +220,7 @@ function move(key)
                             cell[j] = 0
                             headIndex = zeroIndex
                             zeroIndex++
+                            tileMoved = true
                         }
                     }
                     else if(cell[j] === 0 && !zeroFlag)     //first zero at start or after a unique value
@@ -223,6 +231,7 @@ function move(key)
                     else if(cell[j] === headValue)      //we encounter a consecutive matching non-zero value
                     {
                         merge(j,headIndex)
+                        tileMoved = true
                         headIndex = headValue = -1
                         if(!zeroFlag)
                         {
@@ -235,7 +244,7 @@ function move(key)
             break
             
     }
-    insertTile()
+    if(tileMoved){insertTile()}
     draw()
     console.log(cell)       //debugging
     return
